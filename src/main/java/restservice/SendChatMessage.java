@@ -50,7 +50,13 @@ public class SendChatMessage extends HttpServlet {
 	     		jsonObject.put("reciever_user_id", reciever_id);
 	     		jsonObject.put("message",message );
 	     		jsonObject.put("sender_name",current_user.getName() );
-
+  
+	     		
+	     		
+	     		
+	     		
+	     		
+	     		
 	     		if(id == reciever_id) {
 			 if(sessionDataMap.get(id).isOpen())
 			 sessionDataMap.get(id).getRemote().sendString(jsonObject.toString());
